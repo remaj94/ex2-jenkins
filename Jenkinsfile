@@ -9,7 +9,6 @@ pipeline {
 
     stages {
         stage('Build') {
-            when { tag "BUILD_TAG*" }
             steps {
                 // Get some code from a GitHub repository
                 git branch: 'main', url: 'https://github.com/remaj94/szkolenie-ci-jenkins-example'
