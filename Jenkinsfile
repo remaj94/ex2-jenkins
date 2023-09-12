@@ -12,6 +12,7 @@ pipeline {
                     steps {
                         scmSkip(deleteBuild: true, skipPattern:'.*\\[ci skip\\].*')
                     }
+            }
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
